@@ -3,21 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Aitizaz</title>
+    <title>Aitizaz Khan</title>
     <meta
       name="description"
-      content="A simple personal website for Aitizaz with social links."
+      content="Aitizaz Khan is a software engineer focused on platform engineering, developer productivity, reliability, and AI-assisted engineering workflows."
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <main class="page-shell">
-      <section class="intro-card" aria-labelledby="intro-title">
-        <p class="eyebrow">Aitizaz.com</p>
-        <h1 id="intro-title">Hi, my name is Aitizaz.</h1>
+      <section class="hero-card" aria-labelledby="intro-title">
+        <p class="eyebrow">Aitizaz Khan</p>
+        <h1 id="intro-title">
+          I build platform systems that help engineers move faster and operate safely.
+        </h1>
         <p class="intro-copy">
-          Welcome to my website. This is a simple personal page with a short
-          introduction and links to where you can find me online.
+          I’m a software engineer in the San Francisco Bay Area focused on backend
+          architecture, developer productivity, reliability, and AI-assisted engineering.
+          My work sits at the intersection of large production systems, internal tooling,
+          and the engineering practices that let teams move with confidence.
         </p>
 
         <div class="social-links" aria-label="Social links">
@@ -25,12 +29,98 @@
           <a class="social-link" href="https://linkedin.com/in/aitizazk">
             LinkedIn
           </a>
+          <a class="social-link" href="https://github.com/aitizazk">GitHub</a>
         </div>
+      </section>
+
+      <section class="content-section" aria-labelledby="focus-title">
+        <p class="section-kicker">Focus</p>
+        <h2 id="focus-title">The kinds of problems I like working on</h2>
+        <div class="grid two-column-grid">
+          <article class="info-card">
+            <h3>Platform architecture</h3>
+            <p>
+              Modernizing large backend systems, reducing operational risk, and turning
+              fragile paths into reliable, well-reviewed platform foundations.
+            </p>
+          </article>
+          <article class="info-card">
+            <h3>Developer productivity</h3>
+            <p>
+              Improving testing strategy, CI feedback loops, code ownership, coverage
+              visibility, and internal workflows so teams can ship faster with less friction.
+            </p>
+          </article>
+          <article class="info-card">
+            <h3>Reliability & operations</h3>
+            <p>
+              Building deployment safety, observability, runbooks, incident follow-through,
+              and production debugging practices into the way engineering teams work.
+            </p>
+          </article>
+          <article class="info-card">
+            <h3>AI-assisted engineering</h3>
+            <p>
+              Exploring coding-agent workflows, reusable agent skills, guardrails, and
+              review patterns that make AI useful on real production codebases.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="content-section" aria-labelledby="work-title">
+        <p class="section-kicker">Selected work</p>
+        <h2 id="work-title">Recent systems and practices I’ve helped shape</h2>
+        <div class="story-list">
+          <article class="story-item">
+            <h3>AI-enabled developer workflows</h3>
+            <p>
+              Created an internal agent skills ecosystem with shared instructions,
+              reusable skills, validation workflows, and guardrails for safer AI-assisted
+              development across production repositories.
+            </p>
+          </article>
+          <article class="story-item">
+            <h3>Testing and CI modernization</h3>
+            <p>
+              Led a modern testing strategy for a large internal Rails monolith, including
+              framework migration, ownership rules, coverage visibility, and CI changes
+              that reduced feedback loops from hours to minutes.
+            </p>
+          </article>
+          <article class="story-item">
+            <h3>Backend platform modernization</h3>
+            <p>
+              Led Rails/Ruby modernization, compatibility planning, dependency cleanup,
+              autoloading fixes, and deployment-safety improvements for a high-traffic
+              production backend used by many engineering teams.
+            </p>
+          </article>
+          <article class="story-item">
+            <h3>Reliable background processing</h3>
+            <p>
+              Helped migrate high-throughput job processing from legacy infrastructure to
+              AWS SQS/Shoryuken with zero downtime, supporting hundreds of millions of
+              jobs per day.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="content-section closing-section" aria-labelledby="now-title">
+        <p class="section-kicker">Now</p>
+        <h2 id="now-title">What I’m exploring</h2>
+        <p>
+          I’m especially interested in the next generation of developer tools: agentic
+          coding systems, evaluation loops, AI-native internal platforms, and the
+          infrastructure that lets software teams use automation without losing trust,
+          context, or engineering judgment.
+        </p>
       </section>
     </main>
 
     <footer class="site-footer">
-      <p>© <span id="year"></span> Aitizaz</p>
+      <p>© <span id="year"></span> Aitizaz Khan</p>
     </footer>
 
     <script src="script.js"></script>
