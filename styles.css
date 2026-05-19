@@ -43,17 +43,23 @@ body {
 }
 
 .hero-card {
-  display: grid;
-  grid-template-columns: minmax(180px, 280px) 1fr;
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 2.6rem;
+  gap: 2rem;
   padding: 3rem;
+  text-align: center;
+}
+
+.hero-content {
+  width: 100%;
 }
 
 .profile-photo-wrap {
   position: relative;
-  width: min(100%, 280px);
-  aspect-ratio: 1;
+  width: 240px;
+  height: 240px;
+  max-width: 100%;
 }
 
 .profile-photo-wrap::before {
@@ -98,10 +104,13 @@ p {
 }
 
 h1 {
+  margin-right: auto;
   margin-bottom: 0;
-  max-width: 48rem;
-  font-size: clamp(2.25rem, 6vw, 4.4rem);
-  line-height: 0.98;
+  margin-left: auto;
+  max-width: 42rem;
+  font-size: clamp(1.9rem, 3.8vw, 3rem);
+  line-height: 1.08;
+  overflow-wrap: anywhere;
 }
 
 h2 {
@@ -120,7 +129,7 @@ h3 {
 .intro-copy,
 .closing-section p {
   max-width: 43rem;
-  margin: 1.5rem 0 0;
+  margin: 1.4rem auto 0;
   font-size: 1.12rem;
   line-height: 1.75;
   color: var(--muted);
@@ -151,6 +160,7 @@ h3 {
 .social-links {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 0.9rem;
   margin-top: 2rem;
 }
@@ -185,7 +195,7 @@ h3 {
 
 @media (max-width: 760px) {
   .page-shell {
-    width: min(100vw - 1.25rem, 760px);
+    width: calc(100vw - 1.25rem);
     padding-top: 1.5rem;
   }
 
@@ -196,17 +206,23 @@ h3 {
   }
 
   .hero-card {
-    grid-template-columns: 1fr;
-    gap: 2rem;
+    gap: 1.75rem;
   }
 
   .profile-photo-wrap {
-    width: min(72vw, 220px);
-    justify-self: center;
+    width: min(68vw, 210px);
+    height: min(68vw, 210px);
   }
 
-  .hero-content {
-    text-align: center;
+  h1 {
+    max-width: 100%;
+    font-size: clamp(1.7rem, 8vw, 2.2rem);
+    line-height: 1.08;
+  }
+
+  .intro-copy {
+    font-size: 1.04rem;
+    line-height: 1.65;
   }
 
   .intro-copy,
@@ -217,6 +233,11 @@ h3 {
 
   .social-links {
     justify-content: center;
+    gap: 0.65rem;
+  }
+
+  .social-link {
+    padding: 0.78rem 0.95rem;
   }
 
   .two-column-grid {
